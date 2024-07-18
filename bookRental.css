@@ -1,0 +1,183 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: hsl(25, 100%, 75%);
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+*::selection {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.book-rental {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.book-rental h2 {
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.book-rental form {
+    width: 100%;
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.book-rental form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-rental form .input-box input,
+.book-rental form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
+
+.book-rental form .input-box input {
+    width: 49%;
+}
+
+.book-rental form textarea {
+    resize: none;
+}
+
+.book-rental form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.checkbox-box {
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.checkbox-box input {
+    margin-right: 1rem;
+}
+
+.checkbox-box label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 10%;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .book-rental form .input-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-rental form .input-box input {
+        width: 100%;
+    }
+
+    .book-rental form textarea {
+        width: 100%;
+    }
+
+    .checkbox-box {
+        text-align: center;
+    }
+
+    .checkbox-box label {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .btn {
+        padding: 1rem 2.4rem;
+        font-size: 1.4rem;
+    }
+
+    .book-rental form .input-box input,
+    .book-rental form textarea {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .checkbox-box label {
+        font-size: 1rem;
+    }
+}
