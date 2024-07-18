@@ -1,80 +1,3 @@
- <!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-      
-    <link rel="stylesheet" href="bookRental.css">
-</head>
-
-<body>
-    <div>     
-         
-        <section class="book-rental" id="book-rental">
-            <h2 class="heading">Book Your <span>Rental!</span></h2>
-            
-            <form method="post" name="google-sheet">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" name="fullname">
-                    <input type="email" placeholder="Email Address" name="email">
-
-                </div>
-                
-                <div class="input-box">
-                    <input type="tel" placeholder="Contact No" name="contact">
-                    <input type="file" name="image" accept="image/*">
-
-                    
-                </div>
-
-                <div class="input-box">
-                    <input type="date" placeholder="startDate" name="Start Date">
-                    <input type="date" placeholder="endDate" name="End Date">
-                </div>
-                  
-                <div class="input-box">
-                    <textarea name="address" id="" cols="30" rows="10" placeholder="Your Address"></textarea>
-                </div>
-
-                
-                    <label>
-                        <div class="input-box">
-                        <input type="checkbox" name="checkbox" value="value">
-                        Remember Coolers Available For Rent Are Already Used And Would Not Be In Brand New Condition
-                        Click To Agree Our T&C
-                        </div>
-                    </label>
-               
-
-                <input type="submit" value="Book Now" class="btn" name="submit">
-            </form>
-        </section>
-    </div>
-
-    <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw1xUqYea_44ZwnPjDOKK_Tq78QHAsgFpNUxsD6uiinQGfxgMTbrOekC0xzK2_juwEb/exec'
-    const form = document.forms['google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Your rental has been booked successfully!"))
-        .catch(error => console.error('Error!', error.message))
-    })
-    </script>
-</body>
-
-</html>  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="bookrental.css">
+    <link rel="stylesheet" href="bookRental.css">
 </head>
 
 <body>
